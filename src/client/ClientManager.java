@@ -407,7 +407,7 @@ public class ClientManager extends Thread
 		logger = new Logger("MNG_" + managerId.toUpperCase().trim() + ".log");
 		operationResultLogger = new Logger("Result.log");
 
-		if (isIdFormatCorrect(managerId))
+		if (isManagerIdFormatCorrect(managerId))
 		{
 			city = managerId.substring(0, 3).toUpperCase();
 		} else
@@ -430,7 +430,7 @@ public class ClientManager extends Thread
 		}
 	}
 
-	private boolean isIdFormatCorrect(String id)
+	private boolean isManagerIdFormatCorrect(String id)
 	{
 		if (id == null)
 		{
@@ -448,11 +448,21 @@ public class ClientManager extends Thread
 			return false;
 		}
 
-		if (!(id.substring(3, 4).chars().allMatch(Character::isDigit)))
+		if (!isNumeric(id.substring(3, 4)))
 		{
 			return false;
 		}
 
+		return true;
+	}
+	
+	private boolean isNumeric(String str)
+	{
+		for (char c : str.toCharArray())
+		{
+			if (!Character.isDigit(c))
+				return false;
+		}
 		return true;
 	}
 

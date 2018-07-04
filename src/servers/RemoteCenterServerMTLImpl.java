@@ -15,7 +15,7 @@ import records.TeacherRecord;
 import udp.UDPClient;
 import udp.UDPServer;
 
-public class RecordManagerMTLImpl implements RecordManagerInterface
+public class RemoteCenterServerMTLImpl implements RemoteCenterServerInterface
 {
 	private static HashMap<Character, List<Record>> recordsMap = new HashMap<>(); // Needs synchronization
 	private static HashMap<String, Record> indexPerId = new HashMap<>(); // Needs synchronization
@@ -28,7 +28,7 @@ public class RecordManagerMTLImpl implements RecordManagerInterface
 	private static boolean isFirstRemoteUdpCall = true;
 
 	// Constructor
-	public RecordManagerMTLImpl()
+	public RemoteCenterServerMTLImpl()
 	{
 		if (!isInitialized)
 		{

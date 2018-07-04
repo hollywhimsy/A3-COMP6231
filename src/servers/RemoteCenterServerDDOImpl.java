@@ -15,20 +15,20 @@ import records.TeacherRecord;
 import udp.UDPClient;
 import udp.UDPServer;
 
-public class RecordManagerLVLImpl implements RecordManagerInterface
+public class RemoteCenterServerDDOImpl implements RemoteCenterServerInterface
 {
 	private static HashMap<Character, List<Record>> recordsMap = new HashMap<>(); // Needs synchronization
 	private static HashMap<String, Record> indexPerId = new HashMap<>(); // Needs synchronization
 	private static Integer lastTeacherId = 0; // Needs synchronization
 	private static Integer lastStudentId = 0; // Needs synchronization
-	private static String cityAbbr = "LVL";
+	private static String cityAbbr = "DDO";
 	private static List<Integer> otherServersUDPPorts;
 	private static Logger logger = new Logger("SRV_" + cityAbbr.toUpperCase().trim() + ".log");
 	private static boolean isInitialized = false;
 	private static boolean isFirstRemoteUdpCall = true;
 
 	// Constructor
-	public RecordManagerLVLImpl()
+	public RemoteCenterServerDDOImpl()
 	{
 		if (!isInitialized)
 		{
@@ -133,8 +133,8 @@ public class RecordManagerLVLImpl implements RecordManagerInterface
 	{
 		if (isFirstRemoteUdpCall)
 		{
-			(new RecordManagerLVLImplService()).getRecordManagerLVLImpl().recordExist("TR00001", "MTL0001");
-			(new RecordManagerDDOImplService()).getRecordManagerDDOImpl().recordExist("TR00001", "DDO0001");
+			(new RecordManagerLVLImplService()).getRecordManagerLVLImpl().recordExist("TR00001", "LVL0001");
+			(new RecordManagerDDOImplService()).getRecordManagerDDOImpl().recordExist("TR00001", "MTL0001");
 			
 			isFirstRemoteUdpCall = false;
 		}

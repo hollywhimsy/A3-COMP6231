@@ -1,6 +1,6 @@
 package servers;
 
-public interface RecordManagerInterface
+public interface RemoteCenterServerInterface
 {
 	public String createTRecord(String firstName, String lastName, String address, Integer phoneNumber, String specialization, String location, 
 			String managerId);

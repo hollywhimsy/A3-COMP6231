@@ -4,25 +4,6 @@
 Built on Apr 22, 2006 (06:55:48 PDT)-->
  <wsdl:types>
   <schema elementFormDefault="qualified" targetNamespace="http://servers" xmlns="http://www.w3.org/2001/XMLSchema">
-   <element name="createSRecord">
-    <complexType>
-     <sequence>
-      <element name="firstName" type="xsd:string"/>
-      <element name="lastName" type="xsd:string"/>
-      <element name="coursesRegistred" type="xsd:string"/>
-      <element name="status" type="xsd:boolean"/>
-      <element name="statusDate" type="xsd:string"/>
-      <element name="managerId" type="xsd:string"/>
-     </sequence>
-    </complexType>
-   </element>
-   <element name="createSRecordResponse">
-    <complexType>
-     <sequence>
-      <element name="createSRecordReturn" type="xsd:string"/>
-     </sequence>
-    </complexType>
-   </element>
    <element name="createTRecord">
     <complexType>
      <sequence>
@@ -58,20 +39,6 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
      </sequence>
     </complexType>
    </element>
-   <element name="getRecordsCount">
-    <complexType>
-     <sequence>
-      <element name="managerId" type="xsd:string"/>
-     </sequence>
-    </complexType>
-   </element>
-   <element name="getRecordsCountResponse">
-    <complexType>
-     <sequence>
-      <element name="getRecordsCountReturn" type="xsd:string"/>
-     </sequence>
-    </complexType>
-   </element>
    <element name="editRecord">
     <complexType>
      <sequence>
@@ -86,6 +53,39 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
     <complexType>
      <sequence>
       <element name="editRecordReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getRecordsCount">
+    <complexType>
+     <sequence>
+      <element name="managerId" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="getRecordsCountResponse">
+    <complexType>
+     <sequence>
+      <element name="getRecordsCountReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="createSRecord">
+    <complexType>
+     <sequence>
+      <element name="firstName" type="xsd:string"/>
+      <element name="lastName" type="xsd:string"/>
+      <element name="coursesRegistred" type="xsd:string"/>
+      <element name="status" type="xsd:boolean"/>
+      <element name="statusDate" type="xsd:string"/>
+      <element name="managerId" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="createSRecordResponse">
+    <complexType>
+     <sequence>
+      <element name="createSRecordReturn" type="xsd:string"/>
      </sequence>
     </complexType>
    </element>
@@ -180,15 +180,7 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
    </wsdl:message>
 
-   <wsdl:portType name="RecordManagerDDOImpl">
-
-      <wsdl:operation name="createSRecord">
-
-         <wsdl:input message="impl:createSRecordRequest" name="createSRecordRequest"/>
-
-         <wsdl:output message="impl:createSRecordResponse" name="createSRecordResponse"/>
-
-      </wsdl:operation>
+   <wsdl:portType name="RemoteCenterServerDDOImpl">
 
       <wsdl:operation name="createTRecord">
 
@@ -206,6 +198,14 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       </wsdl:operation>
 
+      <wsdl:operation name="editRecord">
+
+         <wsdl:input message="impl:editRecordRequest" name="editRecordRequest"/>
+
+         <wsdl:output message="impl:editRecordResponse" name="editRecordResponse"/>
+
+      </wsdl:operation>
+
       <wsdl:operation name="getRecordsCount">
 
          <wsdl:input message="impl:getRecordsCountRequest" name="getRecordsCountRequest"/>
@@ -214,11 +214,11 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       </wsdl:operation>
 
-      <wsdl:operation name="editRecord">
+      <wsdl:operation name="createSRecord">
 
-         <wsdl:input message="impl:editRecordRequest" name="editRecordRequest"/>
+         <wsdl:input message="impl:createSRecordRequest" name="createSRecordRequest"/>
 
-         <wsdl:output message="impl:editRecordResponse" name="editRecordResponse"/>
+         <wsdl:output message="impl:createSRecordResponse" name="createSRecordResponse"/>
 
       </wsdl:operation>
 
@@ -232,27 +232,9 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
    </wsdl:portType>
 
-   <wsdl:binding name="RecordManagerDDOImplSoapBinding" type="impl:RecordManagerDDOImpl">
+   <wsdl:binding name="RemoteCenterServerDDOImplSoapBinding" type="impl:RemoteCenterServerDDOImpl">
 
       <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
-
-      <wsdl:operation name="createSRecord">
-
-         <wsdlsoap:operation soapAction=""/>
-
-         <wsdl:input name="createSRecordRequest">
-
-            <wsdlsoap:body use="literal"/>
-
-         </wsdl:input>
-
-         <wsdl:output name="createSRecordResponse">
-
-            <wsdlsoap:body use="literal"/>
-
-         </wsdl:output>
-
-      </wsdl:operation>
 
       <wsdl:operation name="createTRecord">
 
@@ -290,6 +272,24 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       </wsdl:operation>
 
+      <wsdl:operation name="editRecord">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="editRecordRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="editRecordResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
       <wsdl:operation name="getRecordsCount">
 
          <wsdlsoap:operation soapAction=""/>
@@ -308,17 +308,17 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       </wsdl:operation>
 
-      <wsdl:operation name="editRecord">
+      <wsdl:operation name="createSRecord">
 
          <wsdlsoap:operation soapAction=""/>
 
-         <wsdl:input name="editRecordRequest">
+         <wsdl:input name="createSRecordRequest">
 
             <wsdlsoap:body use="literal"/>
 
          </wsdl:input>
 
-         <wsdl:output name="editRecordResponse">
+         <wsdl:output name="createSRecordResponse">
 
             <wsdlsoap:body use="literal"/>
 
@@ -346,11 +346,11 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
    </wsdl:binding>
 
-   <wsdl:service name="RecordManagerDDOImplService">
+   <wsdl:service name="RemoteCenterServerDDOImplService">
 
-      <wsdl:port binding="impl:RecordManagerDDOImplSoapBinding" name="RecordManagerDDOImpl">
+      <wsdl:port binding="impl:RemoteCenterServerDDOImplSoapBinding" name="RemoteCenterServerDDOImpl">
 
-         <wsdlsoap:address location="http://localhost:8080/DCMS3/services/RecordManagerDDOImpl"/>
+         <wsdlsoap:address location="http://localhost:8080/A3-COMP6231/services/RemoteCenterServerDDOImpl"/>
 
       </wsdl:port>
 

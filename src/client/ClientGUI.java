@@ -1105,11 +1105,21 @@ public class ClientGUI
 			return false;
 		}
 
-		if (!(id.substring(2, 5).chars().allMatch(Character::isDigit)))
+		if (!isNumeric(id.substring(2, 5)))
 		{
 			return false;
 		}
 
+		return true;
+	}
+
+	private boolean isNumeric(String str)
+	{
+		for (char c : str.toCharArray())
+		{
+			if (!Character.isDigit(c))
+				return false;
+		}
 		return true;
 	}
 
@@ -1131,14 +1141,14 @@ public class ClientGUI
 			return false;
 		}
 
-		if (!(id.substring(3, 4).chars().allMatch(Character::isDigit)))
+		if (!isNumeric(id.substring(3, 4)))
 		{
 			return false;
 		}
 
 		return true;
 	}
-
+	
 	@SuppressWarnings("deprecation")
 	private void init()
 	{
@@ -1218,7 +1228,7 @@ public class ClientGUI
 			txtrOutput.setText("Error! You need to add at least one specilization.");
 			pass = false;
 		}
-		if (!(txtT4.getText().toString().chars().allMatch(Character::isDigit)))
+		if (!isNumeric(txtT4.getText().toString()))
 		{
 			txtrOutput.setText("Error! Phone number can only have digits.");
 			pass = false;
@@ -1511,7 +1521,7 @@ public class ClientGUI
 			{
 				if (txtT6.getText().trim().length() > 0)
 				{
-					if (!(txtT6.getText().toString().chars().allMatch(Character::isDigit)))
+					if (!isNumeric(txtT6.getText().toString()))
 					{
 						txtrOutput.setText("Error! Phone number can only have digits.");
 					} else
