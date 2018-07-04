@@ -1,0 +1,6 @@
+Tue Jul 03 21:18:21 EDT 2018 ==> DDO0001[ClientManager.callCreateSRecord()]: callCreateSRecord called on DDO server and performed successfully @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
+Tue Jul 03 21:18:23 EDT 2018 ==> DDO0001[ClientManager.callGetRecordCounts()]: callGetRecordCounts called on DDO server and performed successfully
+Tue Jul 03 21:30:09 EDT 2018 ==> DDO0001[ClientManager.callGetRecordCounts()]: callGetRecordCounts called on DDO server and performed successfully
+Tue Jul 03 21:30:26 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 21}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00001) @@
+Tue Jul 03 21:31:26 EDT 2018 ==> DDO0001[ClientManager.callTransferRecord()] {Thread ID: 34}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00001)) @@
+Tue Jul 03 21:31:29 EDT 2018 ==> DDO0001[ClientManager.callGetRecordCounts()]: callGetRecordCounts called on DDO server and performed successfully

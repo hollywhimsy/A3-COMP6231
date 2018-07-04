@@ -1,0 +1,12 @@
+Tue Jul 03 21:18:14 EDT 2018 ==> MTL0001[ClientManager.callCreateSRecord()] {Thread ID: 18}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
+Tue Jul 03 21:18:19 EDT 2018 ==> LVL0001[ClientManager.callCreateSRecord()] {Thread ID: 21}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
+Tue Jul 03 21:18:21 EDT 2018 ==> DDO0001[ClientManager.callCreateSRecord()] {Thread ID: 22}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
+Tue Jul 03 21:18:23 EDT 2018 ==> DDO0001[ClientManager.callGetRecordCounts()] {Thread ID: 23}: Records Count: DDO 1, LVL 1, MTL 1
+Tue Jul 03 21:30:09 EDT 2018 ==> DDO0001[ClientManager.callGetRecordCounts()] {Thread ID: 18}: Records Count: DDO 0, LVL 0, MTL 0
+Tue Jul 03 21:30:26 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 21}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00001) @@
+Tue Jul 03 21:30:34 EDT 2018 ==> LVL0001[ClientManager.callCreateSRecord()] {Thread ID: 23}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
+Tue Jul 03 21:30:42 EDT 2018 ==> MTL0001[ClientManager.callCreateSRecord()] {Thread ID: 25}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
+Tue Jul 03 21:30:45 EDT 2018 ==> MTL0001[ClientManager.callGetRecordCounts()] {Thread ID: 27}: Records Count: MTL 1, LVL 1, DDO 1
+Tue Jul 03 21:31:03 EDT 2018 ==> MTL0001[ClientManager.callEditRecord()] {Thread ID: 30}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: coursesRegistred, New Value: asdc,sfdvfc,sdvf,sdfv) @@
+Tue Jul 03 21:31:26 EDT 2018 ==> DDO0001[ClientManager.callTransferRecord()] {Thread ID: 34}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00001)) @@
+Tue Jul 03 21:31:29 EDT 2018 ==> DDO0001[ClientManager.callGetRecordCounts()] {Thread ID: 35}: Records Count: DDO 0, LVL 2, MTL 1

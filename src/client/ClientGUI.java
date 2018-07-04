@@ -18,6 +18,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import javax.swing.SwingConstants;
+import centerManager.CenterManager;
 import javax.swing.JTextField;
 import javax.swing.JCheckBox;
 import java.awt.event.KeyAdapter;
@@ -425,7 +426,7 @@ public class ClientGUI
 						pass = false;
 					} else
 					{
-						ClientManager mng = new ClientManager(cmbxManagers.getSelectedItem().toString());
+						CenterManager mng = new CenterManager(cmbxManagers.getSelectedItem().toString());
 						if (!mng.callRecordExist(txtT1.getText().toUpperCase().trim()))
 						{
 							lblLabel2.setVisible(false);
@@ -1245,7 +1246,7 @@ public class ClientGUI
 		{
 			if (!simultaneously)
 			{
-				ClientManager mng = new ClientManager("CreateTeacher",
+				CenterManager mng = new CenterManager("CreateTeacher",
 						cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim(), txtT2.getText().trim(),
 						txtT3.getText().trim(), Integer.valueOf(txtT4.getText().trim()), specializations);
 
@@ -1262,7 +1263,7 @@ public class ClientGUI
 				{
 					if (cmbxManagers.getItemAt(i).toUpperCase().subSequence(0, 3).equals(txtT5.getText().trim().toUpperCase()))
 					{
-						ClientManager mng = new ClientManager("CreateTeacher", cmbxManagers.getItemAt(i),
+						CenterManager mng = new CenterManager("CreateTeacher", cmbxManagers.getItemAt(i),
 								txtT1.getText().trim(), txtT2.getText().trim(), txtT3.getText().trim(),
 								Integer.valueOf(txtT4.getText().trim()), specializations);
 
@@ -1314,7 +1315,7 @@ public class ClientGUI
 			date.setMonth(Integer.parseInt(cmbxMonth.getSelectedItem().toString()));
 			if (!simultaneously)
 			{
-				ClientManager mng = new ClientManager("CreateStudent",
+				CenterManager mng = new CenterManager("CreateStudent",
 						cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim(), txtT2.getText().trim(),
 						courses, chckbxActive.isSelected(), date);
 
@@ -1329,7 +1330,7 @@ public class ClientGUI
 			{
 				for (int i = 0; i < cmbxManagers.getItemCount(); i++)
 				{
-					ClientManager mng = new ClientManager("CreateStudent", cmbxManagers.getItemAt(i),
+					CenterManager mng = new CenterManager("CreateStudent", cmbxManagers.getItemAt(i),
 							txtT1.getText().trim(), txtT2.getText().trim(), courses, chckbxActive.isSelected(), date);
 
 					mng.start();
@@ -1344,13 +1345,13 @@ public class ClientGUI
 	{
 		if (!simultaneously)
 		{
-			ClientManager mng = new ClientManager("GetCounts", cmbxManagers.getSelectedItem().toString());
+			CenterManager mng = new CenterManager("GetCounts", cmbxManagers.getSelectedItem().toString());
 			txtrOutput.setText(mng.callGetRecordsCount());
 		} else
 		{
 			for (int i = 0; i < cmbxManagers.getItemCount(); i++)
 			{
-				ClientManager mng = new ClientManager("GetCounts", cmbxManagers.getItemAt(i));
+				CenterManager mng = new CenterManager("GetCounts", cmbxManagers.getItemAt(i));
 				mng.start();
 			}
 			txtrOutput.setText("Concurrent call by ALL the existing Managers in the list\n"
@@ -1378,7 +1379,7 @@ public class ClientGUI
 				{
 					if (!simultaneously)
 					{
-						ClientManager mng = new ClientManager("EditRecords",
+						CenterManager mng = new CenterManager("EditRecords",
 								cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim().toUpperCase(),
 								"coursesRegistred", coursesNewList);
 						if (mng.callEditRecord())
@@ -1394,7 +1395,7 @@ public class ClientGUI
 						{
 							if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 							{
-								ClientManager mng = new ClientManager("EditRecords",
+								CenterManager mng = new CenterManager("EditRecords",
 										cmbxManagers.getItemAt(i), txtT1.getText().trim().toUpperCase(),
 										"coursesRegistred", coursesNewList);
 								mng.start();
@@ -1412,7 +1413,7 @@ public class ClientGUI
 			{
 				if (!simultaneously)
 				{
-					ClientManager mng = new ClientManager("EditRecords",
+					CenterManager mng = new CenterManager("EditRecords",
 							cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim().toUpperCase(), "status",
 							chckbxActive.isSelected());
 					if (mng.callEditRecord())
@@ -1428,7 +1429,7 @@ public class ClientGUI
 					{
 						if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 						{
-							ClientManager mng = new ClientManager("EditRecords", cmbxManagers.getItemAt(i),
+							CenterManager mng = new CenterManager("EditRecords", cmbxManagers.getItemAt(i),
 									txtT1.getText().trim().toUpperCase(), "status", chckbxActive.isSelected());
 							mng.start();
 						}
@@ -1449,7 +1450,7 @@ public class ClientGUI
 
 				if (!simultaneously)
 				{
-					ClientManager mng = new ClientManager("EditRecords",
+					CenterManager mng = new CenterManager("EditRecords",
 							cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim().toUpperCase(),
 							"statusDate", date2);
 					if (mng.callEditRecord())
@@ -1465,7 +1466,7 @@ public class ClientGUI
 					{
 						if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 						{
-							ClientManager mng = new ClientManager("EditRecords", cmbxManagers.getItemAt(i),
+							CenterManager mng = new CenterManager("EditRecords", cmbxManagers.getItemAt(i),
 									txtT1.getText().trim().toUpperCase(), "statusDate", date2);
 							mng.start();
 						}
@@ -1485,7 +1486,7 @@ public class ClientGUI
 				{
 					if (!simultaneously)
 					{
-						ClientManager mng = new ClientManager("EditRecords",
+						CenterManager mng = new CenterManager("EditRecords",
 								cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim().toUpperCase(),
 								"address", txtT6.getText().trim());
 						if (mng.callEditRecord())
@@ -1501,7 +1502,7 @@ public class ClientGUI
 						{
 							if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 							{
-								ClientManager mng = new ClientManager("EditRecords",
+								CenterManager mng = new CenterManager("EditRecords",
 										cmbxManagers.getItemAt(i), txtT1.getText().trim().toUpperCase(), "address",
 										txtT6.getText().trim());
 								mng.start();
@@ -1528,7 +1529,7 @@ public class ClientGUI
 					{
 						if (!simultaneously)
 						{
-							ClientManager mng = new ClientManager("EditRecords",
+							CenterManager mng = new CenterManager("EditRecords",
 									cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim().toUpperCase(),
 									"phoneNumber", Integer.valueOf(txtT6.getText().trim()));
 							if (mng.callEditRecord())
@@ -1544,7 +1545,7 @@ public class ClientGUI
 							{
 								if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 								{
-									ClientManager mng = new ClientManager("EditRecords",
+									CenterManager mng = new CenterManager("EditRecords",
 											cmbxManagers.getItemAt(i), txtT1.getText().trim().toUpperCase(),
 											"phoneNumber", Integer.valueOf(txtT6.getText().trim()));
 									mng.start();
@@ -1569,7 +1570,7 @@ public class ClientGUI
 				{
 					if (!simultaneously)
 					{
-						ClientManager mng = new ClientManager("EditRecords",
+						CenterManager mng = new CenterManager("EditRecords",
 								cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim().toUpperCase(),
 								"location", txtT6.getText().trim().toUpperCase());
 						if (mng.callEditRecord())
@@ -1585,7 +1586,7 @@ public class ClientGUI
 						{
 							if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 							{
-								ClientManager mng = new ClientManager("EditRecords",
+								CenterManager mng = new CenterManager("EditRecords",
 										cmbxManagers.getItemAt(i), txtT1.getText().trim().toUpperCase(), "location",
 										txtT6.getText().trim().toUpperCase());
 								mng.start();
@@ -1620,7 +1621,7 @@ public class ClientGUI
 
 		if (!simultaneously)
 		{
-			ClientManager mng = new ClientManager("TransferRecord", cmbxManagers.getSelectedItem().toString(),
+			CenterManager mng = new CenterManager("TransferRecord", cmbxManagers.getSelectedItem().toString(),
 					txtT1.getText().trim().toUpperCase(), txtT2.getText().trim().toUpperCase());
 			if (mng.callTransferRecord())
 			{
@@ -1635,7 +1636,7 @@ public class ClientGUI
 			{
 				if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 				{
-					ClientManager mng = new ClientManager("TransferRecord", cmbxManagers.getItemAt(i),
+					CenterManager mng = new CenterManager("TransferRecord", cmbxManagers.getItemAt(i),
 							txtT1.getText().trim().toUpperCase(), txtT2.getText().trim().toUpperCase());
 					mng.start();
 				}

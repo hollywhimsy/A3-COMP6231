@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import centerManager.CenterManager;
 
 public class ClientCMD
 {
@@ -14,7 +15,7 @@ public class ClientCMD
 		List<String> spec = new ArrayList<String>();
 		spec.add("Math");
 		spec.add("Computer");
-		ClientManager mng = new ClientManager("CreateTRecord", "MTL0001", "Bob", "Azadi", "Garland", 123458886, spec);
+		CenterManager mng = new CenterManager("CreateTRecord", "MTL0001", "Bob", "Azadi", "Garland", 123458886, spec);
 		mng.start();
 
 		// Call Create Student Record
@@ -23,7 +24,7 @@ public class ClientCMD
 		courses.add("Dist");
 		Date date = new Date();
 		date.getTime();
-		ClientManager mng2 = new ClientManager("CreateSRecord", "LVL0001", "Alice", "Amani", courses, true, date);
+		CenterManager mng2 = new CenterManager("CreateSRecord", "LVL0001", "Alice", "Amani", courses, true, date);
 		mng2.start();
 
 		try
@@ -38,15 +39,15 @@ public class ClientCMD
 		Date date2 = new Date();
 		date2.getTime();
 		date2.setDate(11);
-		ClientManager mng3 = new ClientManager("EditRecord", "LVL0002", "SR00001", "statusDate", date2);
+		CenterManager mng3 = new CenterManager("EditRecord", "LVL0002", "SR00001", "statusDate", date2);
 		mng3.start();
 
 		// Call Get Records Count
-		ClientManager mng4 = new ClientManager("MTL0001");
+		CenterManager mng4 = new CenterManager("MTL0001");
 		System.out.println(mng4.callGetRecordsCount()); // This can be called by "run" as a thread too
 
 		// Test if record exists
-		ClientManager mng5 = new ClientManager("MTL0002");
+		CenterManager mng5 = new CenterManager("MTL0002");
 		String id = "TR00001";
 		if (mng5.callRecordExist(id))
 			System.out.println("There is a record corresponding to ID: " + id);
@@ -62,11 +63,11 @@ public class ClientCMD
 		}
 
 		// Call transfer Record
-		ClientManager mng6 = new ClientManager("TransferRecord", "MTL0001", "TR00001", "DDO");
+		CenterManager mng6 = new CenterManager("TransferRecord", "MTL0001", "TR00001", "DDO");
 		mng6.run(); // Also this can be called directly
 
 		// Call Get Records again
-		ClientManager mng7 = new ClientManager("DDO0001");
+		CenterManager mng7 = new CenterManager("DDO0001");
 		System.out.println(mng7.callGetRecordsCount()); // This can be called by "run" as a thread too
 	}
 }

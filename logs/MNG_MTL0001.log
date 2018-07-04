@@ -1,0 +1,4 @@
+Tue Jul 03 21:18:14 EDT 2018 ==> MTL0001[ClientManager.callCreateSRecord()]: callCreateSRecord called on MTL server and performed successfully @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
+Tue Jul 03 21:30:42 EDT 2018 ==> MTL0001[ClientManager.callCreateSRecord()]: callCreateSRecord called on MTL server and performed successfully @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
+Tue Jul 03 21:30:45 EDT 2018 ==> MTL0001[ClientManager.callGetRecordCounts()]: callGetRecordCounts called on MTL server and performed successfully
+Tue Jul 03 21:31:03 EDT 2018 ==> MTL0001[ClientManager.callEditRecord()]: callEditRecord called on MTL server and performed successfully @@ Remote server report: Success! Edit Record is done (Field: coursesRegistred, New Value: asdc,sfdvfc,sdvf,sdfv) @@
