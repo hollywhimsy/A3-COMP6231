@@ -137,7 +137,7 @@ public class CenterManager extends Thread
 		String spliter = "";
 		for (int i = 0; i < specilization.size(); i++)
 		{
-			// form the acceptable format by remote CORBA server
+			// form the acceptable format by remote WEB Service
 			spec = spec + spliter + specilization.get(i);
 			spliter = ",";
 		}
@@ -186,7 +186,7 @@ public class CenterManager extends Thread
 		String spliter = "";
 		for (int i = 0; i < coursesRegistred.size(); i++)
 		{
-			// form the acceptable format by remote CORBA server
+			// form the acceptable format by remote WEB Service
 			courses = courses + spliter + coursesRegistred.get(i);
 			spliter = ",";
 		}
@@ -241,7 +241,7 @@ public class CenterManager extends Thread
 			String spliter = "";
 			for (int i = 0; i < ((List<String>) newValue).size(); i++)
 			{
-				// form the acceptable format by remote CORBA server
+				// form the acceptable format by remote WEB Service
 				newVal = newVal + spliter + ((List<String>) newValue).get(i);
 				spliter = ",";
 			}

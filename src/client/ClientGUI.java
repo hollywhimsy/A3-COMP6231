@@ -118,7 +118,7 @@ public class ClientGUI
 	private void initialize()
 	{
 		frameDCMS1 = new JFrame();
-		frameDCMS1.setTitle("Distributed Class Management System - CORBA");
+		frameDCMS1.setTitle("Distributed Class Management System - WEB Services");
 		frameDCMS1.setBounds(100, 100, 1008, 621);
 		frameDCMS1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
