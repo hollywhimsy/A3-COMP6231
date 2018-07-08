@@ -364,7 +364,7 @@ public class RemoteCenterServerLVLImpl implements RemoteCenterServerInterface
 			String spliter = "";
 			for (int i = 0; i < teacher.getSpecialization().size(); i++)
 			{
-				// form the acceptable format by remote CORBA server
+				// form the acceptable format by remote WEB Service
 				spec = spec + spliter + teacher.getSpecialization().get(i);
 				spliter = ",";
 			}
@@ -422,7 +422,7 @@ public class RemoteCenterServerLVLImpl implements RemoteCenterServerInterface
 			String spliter = "";
 			for (int i = 0; i < student.getCoursesRegistred().size(); i++)
 			{
-				// form the acceptable format by remote CORBA server
+				// form the acceptable format by remote WEB service
 				courses = courses + spliter + student.getCoursesRegistred().get(i);
 				spliter = ",";
 			}

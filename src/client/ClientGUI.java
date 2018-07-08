@@ -1263,7 +1263,7 @@ public class ClientGUI
 				{
 					if (cmbxManagers.getItemAt(i).toUpperCase().subSequence(0, 3).equals(txtT5.getText().trim().toUpperCase()))
 					{
-						CenterManager mng = new CenterManager("CreateTeacher", cmbxManagers.getItemAt(i),
+						CenterManager mng = new CenterManager("CreateTRecord", cmbxManagers.getItemAt(i),
 								txtT1.getText().trim(), txtT2.getText().trim(), txtT3.getText().trim(),
 								Integer.valueOf(txtT4.getText().trim()), specializations);
 
@@ -1315,13 +1315,13 @@ public class ClientGUI
 			date.setMonth(Integer.parseInt(cmbxMonth.getSelectedItem().toString()));
 			if (!simultaneously)
 			{
-				CenterManager mng = new CenterManager("CreateStudent",
+				CenterManager mng = new CenterManager("CreateSRecord",
 						cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim(), txtT2.getText().trim(),
 						courses, chckbxActive.isSelected(), date);
 
 				if (mng.callCreateSRecord())
 				{
-					txtrOutput.setText("Student record created successfullty by calling remote server");
+					txtrOutput.setText("Student record created successfully by calling remote server");
 				} else
 				{
 					txtrOutput.setText("Error! For more information see the log files");
@@ -1330,7 +1330,7 @@ public class ClientGUI
 			{
 				for (int i = 0; i < cmbxManagers.getItemCount(); i++)
 				{
-					CenterManager mng = new CenterManager("CreateStudent", cmbxManagers.getItemAt(i),
+					CenterManager mng = new CenterManager("CreateSRecord", cmbxManagers.getItemAt(i).toString(),
 							txtT1.getText().trim(), txtT2.getText().trim(), courses, chckbxActive.isSelected(), date);
 
 					mng.start();
@@ -1345,13 +1345,13 @@ public class ClientGUI
 	{
 		if (!simultaneously)
 		{
-			CenterManager mng = new CenterManager("GetCounts", cmbxManagers.getSelectedItem().toString());
+			CenterManager mng = new CenterManager("GetRecordsCount", cmbxManagers.getSelectedItem().toString());
 			txtrOutput.setText(mng.callGetRecordsCount());
 		} else
 		{
 			for (int i = 0; i < cmbxManagers.getItemCount(); i++)
 			{
-				CenterManager mng = new CenterManager("GetCounts", cmbxManagers.getItemAt(i));
+				CenterManager mng = new CenterManager("GetRecordsCount", cmbxManagers.getItemAt(i).toString());
 				mng.start();
 			}
 			txtrOutput.setText("Concurrent call by ALL the existing Managers in the list\n"
@@ -1379,7 +1379,7 @@ public class ClientGUI
 				{
 					if (!simultaneously)
 					{
-						CenterManager mng = new CenterManager("EditRecords",
+						CenterManager mng = new CenterManager("EditRecord",
 								cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim().toUpperCase(),
 								"coursesRegistred", coursesNewList);
 						if (mng.callEditRecord())
@@ -1395,8 +1395,8 @@ public class ClientGUI
 						{
 							if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 							{
-								CenterManager mng = new CenterManager("EditRecords",
-										cmbxManagers.getItemAt(i), txtT1.getText().trim().toUpperCase(),
+								CenterManager mng = new CenterManager("EditRecord",
+										cmbxManagers.getItemAt(i).toString(), txtT1.getText().trim().toUpperCase(),
 										"coursesRegistred", coursesNewList);
 								mng.start();
 							}
@@ -1429,7 +1429,7 @@ public class ClientGUI
 					{
 						if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 						{
-							CenterManager mng = new CenterManager("EditRecords", cmbxManagers.getItemAt(i),
+							CenterManager mng = new CenterManager("EditRecords", cmbxManagers.getItemAt(i).toString(),
 									txtT1.getText().trim().toUpperCase(), "status", chckbxActive.isSelected());
 							mng.start();
 						}
@@ -1450,7 +1450,7 @@ public class ClientGUI
 
 				if (!simultaneously)
 				{
-					CenterManager mng = new CenterManager("EditRecords",
+					CenterManager mng = new CenterManager("EditRecord",
 							cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim().toUpperCase(),
 							"statusDate", date2);
 					if (mng.callEditRecord())
@@ -1466,7 +1466,7 @@ public class ClientGUI
 					{
 						if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 						{
-							CenterManager mng = new CenterManager("EditRecords", cmbxManagers.getItemAt(i),
+							CenterManager mng = new CenterManager("EditRecord", cmbxManagers.getItemAt(i).toString(),
 									txtT1.getText().trim().toUpperCase(), "statusDate", date2);
 							mng.start();
 						}
@@ -1486,7 +1486,7 @@ public class ClientGUI
 				{
 					if (!simultaneously)
 					{
-						CenterManager mng = new CenterManager("EditRecords",
+						CenterManager mng = new CenterManager("EditRecord",
 								cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim().toUpperCase(),
 								"address", txtT6.getText().trim());
 						if (mng.callEditRecord())
@@ -1502,8 +1502,8 @@ public class ClientGUI
 						{
 							if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 							{
-								CenterManager mng = new CenterManager("EditRecords",
-										cmbxManagers.getItemAt(i), txtT1.getText().trim().toUpperCase(), "address",
+								CenterManager mng = new CenterManager("EditRecord",
+										cmbxManagers.getItemAt(i).toString(), txtT1.getText().trim().toUpperCase(), "address",
 										txtT6.getText().trim());
 								mng.start();
 							}
@@ -1529,7 +1529,7 @@ public class ClientGUI
 					{
 						if (!simultaneously)
 						{
-							CenterManager mng = new CenterManager("EditRecords",
+							CenterManager mng = new CenterManager("EditRecord",
 									cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim().toUpperCase(),
 									"phoneNumber", Integer.valueOf(txtT6.getText().trim()));
 							if (mng.callEditRecord())
@@ -1545,8 +1545,8 @@ public class ClientGUI
 							{
 								if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 								{
-									CenterManager mng = new CenterManager("EditRecords",
-											cmbxManagers.getItemAt(i), txtT1.getText().trim().toUpperCase(),
+									CenterManager mng = new CenterManager("EditRecord",
+											cmbxManagers.getItemAt(i).toString(), txtT1.getText().trim().toUpperCase(),
 											"phoneNumber", Integer.valueOf(txtT6.getText().trim()));
 									mng.start();
 								}
@@ -1570,7 +1570,7 @@ public class ClientGUI
 				{
 					if (!simultaneously)
 					{
-						CenterManager mng = new CenterManager("EditRecords",
+						CenterManager mng = new CenterManager("EditRecord",
 								cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim().toUpperCase(),
 								"location", txtT6.getText().trim().toUpperCase());
 						if (mng.callEditRecord())
@@ -1586,8 +1586,8 @@ public class ClientGUI
 						{
 							if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 							{
-								CenterManager mng = new CenterManager("EditRecords",
-										cmbxManagers.getItemAt(i), txtT1.getText().trim().toUpperCase(), "location",
+								CenterManager mng = new CenterManager("EditRecord",
+										cmbxManagers.getItemAt(i).toString(), txtT1.getText().trim().toUpperCase(), "location",
 										txtT6.getText().trim().toUpperCase());
 								mng.start();
 							}
@@ -1636,7 +1636,7 @@ public class ClientGUI
 			{
 				if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 				{
-					CenterManager mng = new CenterManager("TransferRecord", cmbxManagers.getItemAt(i),
+					CenterManager mng = new CenterManager("TransferRecord", cmbxManagers.getItemAt(i).toString(),
 							txtT1.getText().trim().toUpperCase(), txtT2.getText().trim().toUpperCase());
 					mng.start();
 				}
