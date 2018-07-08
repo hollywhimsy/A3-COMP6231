@@ -1413,7 +1413,7 @@ public class ClientGUI
 			{
 				if (!simultaneously)
 				{
-					CenterManager mng = new CenterManager("EditRecords",
+					CenterManager mng = new CenterManager("EditRecord",
 							cmbxManagers.getSelectedItem().toString(), txtT1.getText().trim().toUpperCase(), "status",
 							chckbxActive.isSelected());
 					if (mng.callEditRecord())
@@ -1429,7 +1429,7 @@ public class ClientGUI
 					{
 						if (cmbxManagers.getItemAt(i).subSequence(0, 3).equals(cmbxManagers.getSelectedItem().toString().subSequence(0, 3)))
 						{
-							CenterManager mng = new CenterManager("EditRecords", cmbxManagers.getItemAt(i).toString(),
+							CenterManager mng = new CenterManager("EditRecord", cmbxManagers.getItemAt(i).toString(),
 									txtT1.getText().trim().toUpperCase(), "status", chckbxActive.isSelected());
 							mng.start();
 						}
