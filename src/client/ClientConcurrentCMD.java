@@ -18,14 +18,11 @@ public class ClientConcurrentCMD
 			List<String> spec = new ArrayList<String>();
 			spec.add("Math");
 			spec.add("Computer");
-			CenterManager mng = new CenterManager("CreateTRecord", "MTL0001", "Bob", "Azadi", "Garland",
-					123458886, spec);
+			CenterManager mng = new CenterManager("CreateTRecord", "MTL0001", "Bob", "Azadi", "Garland", 123458886, spec);
 			mng.start();
-			CenterManager mng2 = new CenterManager("CreateTRecord", "LVL0001", "Bob", "Azadi", "Garland",
-					123458886, spec);
+			CenterManager mng2 = new CenterManager("CreateTRecord", "LVL0001", "Bob", "Azadi", "Garland", 123458886, spec);
 			mng2.start();
-			CenterManager mng3 = new CenterManager("CreateTRecord", "DDO0001", "Bob", "Azadi", "Garland",
-					123458886, spec);
+			CenterManager mng3 = new CenterManager("CreateTRecord", "DDO0001", "Bob", "Azadi", "Garland", 123458886, spec);
 			mng3.start();
 
 			// Call Create Student Record
@@ -34,14 +31,11 @@ public class ClientConcurrentCMD
 			courses.add("Dist");
 			Date date = new Date();
 			date.getTime();
-			CenterManager mng4 = new CenterManager("CreateSRecord", "MTL0002",
-					"Alice", "Amani", courses, true, date);
+			CenterManager mng4 = new CenterManager("CreateSRecord", "MTL0002", "Alice", "Amani", courses, true, date);
 			mng4.start();
-			CenterManager mng5 = new CenterManager("CreateSRecord", "LVL0002",
-					"Alice", "Amani", courses, true, date);
+			CenterManager mng5 = new CenterManager("CreateSRecord", "LVL0002", "Alice", "Amani", courses, true, date);
 			mng5.start();
-			CenterManager mng6 = new CenterManager("CreateSRecord", "DDO0002",
-					"Alice", "Amani", courses, true, date);
+			CenterManager mng6 = new CenterManager("CreateSRecord", "DDO0002", "Alice", "Amani", courses, true, date);
 			mng6.start();
 		}	
 		

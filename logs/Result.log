@@ -1,12 +1,180 @@
-Tue Jul 03 21:18:14 EDT 2018 ==> MTL0001[ClientManager.callCreateSRecord()] {Thread ID: 18}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
-Tue Jul 03 21:18:19 EDT 2018 ==> LVL0001[ClientManager.callCreateSRecord()] {Thread ID: 21}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
-Tue Jul 03 21:18:21 EDT 2018 ==> DDO0001[ClientManager.callCreateSRecord()] {Thread ID: 22}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
-Tue Jul 03 21:18:23 EDT 2018 ==> DDO0001[ClientManager.callGetRecordCounts()] {Thread ID: 23}: Records Count: DDO 1, LVL 1, MTL 1
-Tue Jul 03 21:30:09 EDT 2018 ==> DDO0001[ClientManager.callGetRecordCounts()] {Thread ID: 18}: Records Count: DDO 0, LVL 0, MTL 0
-Tue Jul 03 21:30:26 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 21}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00001) @@
-Tue Jul 03 21:30:34 EDT 2018 ==> LVL0001[ClientManager.callCreateSRecord()] {Thread ID: 23}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
-Tue Jul 03 21:30:42 EDT 2018 ==> MTL0001[ClientManager.callCreateSRecord()] {Thread ID: 25}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
-Tue Jul 03 21:30:45 EDT 2018 ==> MTL0001[ClientManager.callGetRecordCounts()] {Thread ID: 27}: Records Count: MTL 1, LVL 1, DDO 1
-Tue Jul 03 21:31:03 EDT 2018 ==> MTL0001[ClientManager.callEditRecord()] {Thread ID: 30}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: coursesRegistred, New Value: asdc,sfdvfc,sdvf,sdfv) @@
-Tue Jul 03 21:31:26 EDT 2018 ==> DDO0001[ClientManager.callTransferRecord()] {Thread ID: 34}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00001)) @@
-Tue Jul 03 21:31:29 EDT 2018 ==> DDO0001[ClientManager.callGetRecordCounts()] {Thread ID: 35}: Records Count: DDO 0, LVL 2, MTL 1
+Sun Jul 08 18:32:10 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 44}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00001) @@
+Sun Jul 08 18:32:10 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 49}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00001) @@
+Sun Jul 08 18:32:10 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 46}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
+Sun Jul 08 18:32:10 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 34}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00002) @@
+Sun Jul 08 18:32:10 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 43}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00003) @@
+Sun Jul 08 18:32:10 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 31}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00002) @@
+Sun Jul 08 18:32:10 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 32}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00002) @@
+Sun Jul 08 18:32:10 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 14}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00003) @@
+Sun Jul 08 18:32:11 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 21}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
+Sun Jul 08 18:32:11 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 16}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00003) @@
+Sun Jul 08 18:32:11 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 33}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00002) @@
+Sun Jul 08 18:32:11 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 10}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00001) @@
+Sun Jul 08 18:32:12 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 76}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00004) @@
+Sun Jul 08 18:32:12 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 25}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00004) @@
+Sun Jul 08 18:32:12 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 41}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
+Sun Jul 08 18:32:12 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 18}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00002) @@
+Sun Jul 08 18:32:12 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 162}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:12 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 28}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00005) @@
+Sun Jul 08 18:32:13 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 47}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00002) @@
+Sun Jul 08 18:32:13 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 13}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00005) @@
+Sun Jul 08 18:32:13 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 22}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00006) @@
+Sun Jul 08 18:32:14 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 20}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00004) @@
+Sun Jul 08 18:32:14 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 78}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00003) @@
+Sun Jul 08 18:32:15 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 82}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00007) @@
+Sun Jul 08 18:32:15 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 37}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00006) @@
+Sun Jul 08 18:32:15 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 40}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00008) @@
+Sun Jul 08 18:32:15 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 61}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00007) @@
+Sun Jul 08 18:32:15 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 83}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00003) @@
+Sun Jul 08 18:32:15 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 75}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00003) @@
+Sun Jul 08 18:32:15 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 210}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:15 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 87}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00004) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 113}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00004) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 125}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00005) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 121}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00008) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 122}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00005) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 127}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00009) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> MTL0006[ClientManager.callEditRecord()] {Thread ID: 133}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: address, New Value: st. Catrine) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 42}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00004) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 124}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00009) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 131}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00006) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 69}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00005) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 24}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00005) @@
+Sun Jul 08 18:32:17 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 188}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:17 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 19}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00010) @@
+Sun Jul 08 18:32:17 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 130}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00010) @@
+Sun Jul 08 18:32:17 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 38}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00006) @@
+Sun Jul 08 18:32:17 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 48}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00006) @@
+Sun Jul 08 18:32:17 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 52}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00011) @@
+Sun Jul 08 18:32:17 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 27}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00006) @@
+Sun Jul 08 18:32:17 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 119}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00007) @@
+Sun Jul 08 18:32:18 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 112}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00012) @@
+Sun Jul 08 18:32:18 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 29}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00008) @@
+Sun Jul 08 18:32:18 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 123}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00007) @@
+Sun Jul 08 18:32:18 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 129}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00008) @@
+Sun Jul 08 18:32:18 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 15}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00009) @@
+Sun Jul 08 18:32:18 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 73}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00011) @@
+Sun Jul 08 18:32:18 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 105}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00010) @@
+Sun Jul 08 18:32:18 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 67}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00012) @@
+Sun Jul 08 18:32:18 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 101}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00009) @@
+Sun Jul 08 18:32:18 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 196}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:18 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 190}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:18 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 128}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00007) @@
+Sun Jul 08 18:32:18 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 144}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:19 EDT 2018 ==> DDO0006[ClientManager.callEditRecord()] {Thread ID: 187}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: status, New Value: false) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 72}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00007) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 59}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00010) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 118}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00013) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 120}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00008) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 116}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00008) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 117}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00011) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 65}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00011) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 26}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00009) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 154}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 160}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 166}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:19 EDT 2018 ==> DDO0006[ClientManager.callEditRecord()] {Thread ID: 173}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: status, New Value: false) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 45}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00012) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 106}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00014) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 109}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00013) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 104}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00010) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 132}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00014)) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 114}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00009) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 36}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00010) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 50}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00011) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 23}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00012) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 66}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00011) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 17}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00013) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 30}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00012) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 202}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:20 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 192}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createSRecord is done (ID: SR00015)) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 54}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00013) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 60}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00014) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 51}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00013) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 77}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00014) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> DDO0006[ClientManager.callEditRecord()] {Thread ID: 181}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: status, New Value: false) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0006[ClientManager.callEditRecord()] {Thread ID: 137}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: address, New Value: st. Catrine) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 186}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createSRecord is done (ID: SR00017)) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 180}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createSRecord is done (ID: SR00016)) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0001[ClientManager.callGetRecordCounts()] {Thread ID: 212}: Records Count: MTL 26, LVL 29, DDO 22
+Sun Jul 08 18:32:20 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 80}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00012) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 206}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 57}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00014) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 58}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00018) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 95}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00015) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 158}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00015)) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 208}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 56}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00013) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 110}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00014) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 172}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createSRecord is done (ID: SR00019)) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 198}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createSRecord is done (ID: SR00020)) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 150}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00016)) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 99}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00015) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 68}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00016) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 39}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00016) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 94}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00021) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 86}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00015) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0006[ClientManager.callEditRecord()] {Thread ID: 177}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: status, New Value: false) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 35}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00016) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 91}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00017) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 204}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:21 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 88}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00022) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0006[ClientManager.callEditRecord()] {Thread ID: 197}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: status, New Value: false) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0006[ClientManager.callEditRecord()] {Thread ID: 153}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: address, New Value: st. Catrine) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 93}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00017) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 140}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00020)) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 53}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00017) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0006[ClientManager.callEditRecord()] {Thread ID: 157}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: address, New Value: st. Catrine) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 146}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00018)) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 152}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00019)) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 194}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createSRecord is done (ID: SR00023)) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 84}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00015) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 90}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00016) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 89}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00018) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 63}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00018) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 81}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00019) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0006[ClientManager.callEditRecord()] {Thread ID: 139}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: address, New Value: st. Catrine) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 108}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00017) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 55}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00024) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 97}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00021) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 79}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00022) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 102}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00018) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 103}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00025) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 142}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00023)) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 98}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00018) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 107}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00019) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 148}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00026)) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 134}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00027)) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 200}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createSRecord is done (ID: SR00025)) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 92}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00017) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> DDO0006[ClientManager.callEditRecord()] {Thread ID: 185}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: status, New Value: false) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 100}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00024) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 138}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00028)) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> DDO0006[ClientManager.callEditRecord()] {Thread ID: 183}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: status, New Value: false) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 184}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createSRecord is done (ID: SR00026)) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 136}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00029)) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0002[ClientManager.callCreateSRecord()] {Thread ID: 111}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00020) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 168}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:22 EDT 2018 ==> DDO0006[ClientManager.callEditRecord()] {Thread ID: 203}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: status, New Value: false) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> DDO0002[ClientManager.callCreateSRecord()] {Thread ID: 71}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00020) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0006[ClientManager.callEditRecord()] {Thread ID: 145}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: address, New Value: st. Catrine) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> DDO0006[ClientManager.callEditRecord()] {Thread ID: 211}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: status, New Value: false) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> DDO0006[ClientManager.callEditRecord()] {Thread ID: 191}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: status, New Value: false) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 96}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00019) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 170}: Record transferring failed @@ Remote server report: Error! The given record dosen't exist in this server @@
+Sun Jul 08 18:32:23 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 174}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createSRecord is done (ID: SR00027)) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 64}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00028) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> LVL0002[ClientManager.callCreateSRecord()] {Thread ID: 70}: Student record created @@ Remote server report: Success! createSRecord is done (ID: SR00032) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> MTL0006[ClientManager.callEditRecord()] {Thread ID: 169}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: address, New Value: st. Catrine) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 182}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createSRecord is done (ID: SR00029)) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> DDO0006[ClientManager.callEditRecord()] {Thread ID: 205}: Edit record performed successfully @@ Remote server report: Success! Edit Record is done (Field: status, New Value: false) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 126}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00020) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 115}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00031) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 74}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00019) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 156}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00030)) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> LVL0001[ClientManager.callCreateTRecord()] {Thread ID: 85}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00032) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> MTL0006[ClientManager.callTransferRecord()] {Thread ID: 164}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createTRecord is done (ID: TR00033)) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> DDO0001[ClientManager.callCreateTRecord()] {Thread ID: 62}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00020) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 178}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createSRecord is done (ID: SR00030)) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> DDO0006[ClientManager.callTransferRecord()] {Thread ID: 176}: Record is trasfered successfully @@ Remote server report: Success! Record Transfered (Success! createSRecord is done (ID: SR00031)) @@
+Sun Jul 08 19:02:48 EDT 2018 ==> MTL0001[ClientManager.callGetRecordCounts()] {Thread ID: 17}: Records Count: MTL 27, LVL 65, DDO 28

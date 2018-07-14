@@ -1,4 +1,22 @@
-Tue Jul 03 21:18:14 EDT 2018 ==> MTL0001[ClientManager.callCreateSRecord()]: callCreateSRecord called on MTL server and performed successfully @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
-Tue Jul 03 21:30:42 EDT 2018 ==> MTL0001[ClientManager.callCreateSRecord()]: callCreateSRecord called on MTL server and performed successfully @@ Remote server report: Success! createSRecord is done (ID: SR00001) @@
-Tue Jul 03 21:30:45 EDT 2018 ==> MTL0001[ClientManager.callGetRecordCounts()]: callGetRecordCounts called on MTL server and performed successfully
-Tue Jul 03 21:31:03 EDT 2018 ==> MTL0001[ClientManager.callEditRecord()]: callEditRecord called on MTL server and performed successfully @@ Remote server report: Success! Edit Record is done (Field: coursesRegistred, New Value: asdc,sfdvfc,sdvf,sdfv) @@
+Sun Jul 08 18:32:11 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 10}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00001) @@
+Sun Jul 08 18:32:12 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 18}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00002) @@
+Sun Jul 08 18:32:14 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 78}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00003) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 42}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00004) @@
+Sun Jul 08 18:32:16 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 24}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00005) @@
+Sun Jul 08 18:32:17 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 48}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00006) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 72}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00007) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 120}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00008) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 114}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00009) @@
+Sun Jul 08 18:32:19 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 36}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00010) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 66}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00011) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 30}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00012) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 54}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00013) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 60}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00014) @@
+Sun Jul 08 18:32:20 EDT 2018 ==> MTL0001[ClientManager.callGetRecordCounts()]: callGetRecordCounts called on MTL server and performed successfully
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 84}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00015) @@
+Sun Jul 08 18:32:21 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 90}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00016) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 108}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00017) @@
+Sun Jul 08 18:32:22 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 102}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00018) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 96}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00019) @@
+Sun Jul 08 18:32:23 EDT 2018 ==> MTL0001[ClientManager.callCreateTRecord()] {Thread ID: 126}: Teacher record created @@ Remote server report: Success! createTRecord is done (ID: TR00020) @@
+Sun Jul 08 19:02:48 EDT 2018 ==> MTL0001[ClientManager.callGetRecordCounts()]: callGetRecordCounts called on MTL server and performed successfully
